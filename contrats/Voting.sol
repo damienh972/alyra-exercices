@@ -28,7 +28,7 @@ contract Voting is Ownable{
     }
     
     
-    WorkflowStatus public currState;
+    WorkflowStatus private currState;
     mapping (address  => Voter) public voters;
     Proposal[] public proposals;
     uint proposalId;
@@ -116,4 +116,17 @@ contract Voting is Ownable{
         emit WorkflowStatusChange (WorkflowStatus.VotingSessionEnded, WorkflowStatus.VotesTallied);
         emit VotesTallied();
     }
+    
+    function showWinnerProposal() external view returns(string memory,uint) {
+        return (string(abi.encodePacked("The winner is : ",proposals[winningProposalId].description)), proposals[winningProposalId].voteCount);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
