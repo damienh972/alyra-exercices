@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity 0.6.11;
 
@@ -7,17 +6,18 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/E
 contract ERC20Token is ERC20 {  
     address public owner;
     
+    // ownership check modifier
     modifier onlyOwner {
         require(owner == msg.sender);
         _;
     }
-    
-   constructor(uint256 initialSupply) public ERC20("zozocoin", "ZOZ") {
+
+    /** 
+     *@param _initialSupply number of token
+     */
+   constructor(uint256 _initialSupply) public ERC20("belt", "BJJ") {
        owner = msg.sender;
-       _mint(msg.sender, initialSupply);
-   }
-   
-   function mint(uint256 _amount) public onlyOwner {
-       _mint(msg.sender,_amount);
+       // imported function that will create our token 
+       _mint(msg.sender, _initialSupply);
    }
 }

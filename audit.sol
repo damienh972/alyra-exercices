@@ -1,4 +1,6 @@
-pragma solidity ^0.5.12;
+                                                                                                //          Audit result
+
+pragma solidity ^0.5.12;                                                                        
                                                                                                 //-1 missing import of SafeMath
 contract Crowdsale {
    using SafeMath for uint256;          

@@ -10,7 +10,6 @@ contract KingOfEther {
     function claimThrone() external payable {
         require(msg.value > balance, "Need to pay more to become the king");
         withdrawal[msg.sender] += msg.value;
-        
         balance = msg.value;
         king = msg.sender;
     }
