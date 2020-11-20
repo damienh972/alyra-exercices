@@ -1,8 +1,7 @@
-
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.11;
+pragma solidity <0.7.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/access/Ownable.sol";
+// import "/openzeppelin/contracts/access/Ownable.sol";
 
 contract Voting is Ownable{
     
@@ -120,13 +119,4 @@ contract Voting is Ownable{
     function showWinnerProposal() external view returns(string memory,uint) {
         return (string(abi.encodePacked("The winner is : ",proposals[winningProposalId].description)), proposals[winningProposalId].voteCount);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
