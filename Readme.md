@@ -1,7 +1,10 @@
 # Blockchain and smartcontracts features
 
 
-## Menu
+
+
+
+
 
 `contrats:` some standarts smartcontracts based on ethereum blockchain and basics solidity attacks exemples.
 
@@ -12,6 +15,12 @@
 
 
 
+
+
+
 Feel free to make constructive comments to optimize the code!
+
+
+
 
 * check projects's readme file for configuration
