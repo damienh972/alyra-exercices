@@ -1,6 +1,5 @@
-// elalalalalalala
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.11;
+pragma solidity 0.6.12;
 
 contract EtherStore {
     // Withdrawal limit = 1 ether / week
