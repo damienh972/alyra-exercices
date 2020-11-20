@@ -6,6 +6,10 @@
 
 
 
+
+
+
+
 `contrats:` some standarts smartcontracts based on ethereum blockchain and basics solidity attacks exemples.
 
 `private_blockchain:` private blockchain using geth.
@@ -18,7 +22,15 @@
 
 
 
+
+
+
+
 Feel free to make constructive comments to optimize the code!
+
+
+
+
 
 
 
