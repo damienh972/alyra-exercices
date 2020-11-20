@@ -16,16 +16,13 @@
 
 
 
+**check projects's readme file for configuration** 
 
 
 
 
 
-
-Feel free to make constructive comments to optimize the code!  
-
-
-
+Feel free to make constructive comments to oimize the code!    
 
 
 
@@ -33,6 +30,9 @@ Feel free to make constructive comments to optimize the code!
 
 
 
-* check projects's readme file for configuration  
+
+ 
+
+
 
 
